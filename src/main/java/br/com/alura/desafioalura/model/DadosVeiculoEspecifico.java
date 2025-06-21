@@ -5,7 +5,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public record DadosVeiculoEspecifico(@JsonAlias("Valor") double valor,
+public record DadosVeiculoEspecifico(@JsonAlias("Valor") String valor,
                                       @JsonAlias("Marca") String marca,
                                       @JsonAlias("Modelo") String modelo,
                                       @JsonAlias("AnoModelo") Integer ano,
